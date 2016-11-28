@@ -27,7 +27,7 @@ public class Flight implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String flightId;
+    private String flightID;
     private String flightNumber;
     private String date;
     private int numberOfSeats;
@@ -37,7 +37,7 @@ public class Flight implements Serializable {
     private String destination;
     
     public Flight (String flightId, String flightNumber, String date, int numberOfSeats, double totalPrice, int traveltime, String origin, String destination) {
-        this.flightId = flightId;
+        this.flightID = flightId;
         this.flightNumber = flightNumber;
         this.date = date;
         this.numberOfSeats = numberOfSeats;
@@ -52,11 +52,11 @@ public class Flight implements Serializable {
     }
 
     public String getFlightId() {
-        return flightId;
+        return flightID;
     }
 
     public void setFlightId(String flightId) {
-        this.flightId = flightId;
+        this.flightID = flightId;
     }
 
     public String getFlightNumber() {
